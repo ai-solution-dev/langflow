@@ -269,6 +269,7 @@ export const SIDEBAR_BUNDLES = [
     name: "homeassistant",
     icon: "HomeAssistant",
   },
+  { display_name: "Polaris AI", name: "polarisai", icon: "PolarisAI" },
 ];
 
 export const categoryIcons: Record<string, string> = {

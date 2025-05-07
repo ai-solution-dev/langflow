@@ -80,3 +80,22 @@ This component uses the [Unstructured.io](https://unstructured.io/) Serverless A
 | Name | Display Name | Info |
 | --- | --- | --- |
 | data | Data | List of Data objects containing the parsed content from the input file |
+
+## Polaris AI DataInsight
+
+The [PolarisAIDataInsight](https://datainsight.polarisoffice.com/) component uses PolarisAIDataInsightLoader from Langchain to load documents in various formats—including Word, HWP, Sheets, and Slides—.
+
+### Inputs
+
+| Name | Display Name | Info |
+| --- | --- | --- |
+| file_path | File | The path to the file to be parsed (supported types are listed [here](https://datainsight.polarisoffice.com/api/reference)) |
+| api_key | API Key | Polaris AI DataInsight API Key (refer to [here](https://datainsight.polarisoffice.com/documentation/quickstart) for how to get the API key) |
+| resources_dir | Directory For Resources | The path to the directory where resources—such as shapes, images, etc.— included in the input file will be stored. |
+| mode | Loading Mode | Choose the loading mode. `element` mode loads each element separately. `page` mode loads each page separately. `single` mode loads the entire document as a single object. |
+
+### Outputs
+
+| Name | Display Name | Info |
+| --- | --- | --- |
+| data | Data | List of Data objects containing the parsed content from the input file |
